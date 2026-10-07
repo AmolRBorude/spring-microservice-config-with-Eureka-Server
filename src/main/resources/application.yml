@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Spring-Microservice-Configuration
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/microserviceconfig
+    username: root
+    password: root@12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+  instance:
+    enable-self-prevention: false
